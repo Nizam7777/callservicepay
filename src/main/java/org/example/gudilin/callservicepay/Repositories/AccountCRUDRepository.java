@@ -32,7 +32,7 @@ public interface AccountCRUDRepository extends CrudRepository<AccountCRUD, Long>
 
     /**
      * Аннотация @Modifying применяется к метолоам изменения записей в запросе @Query
-     * INSERT, UPDATE, DELETE*/
+     * INSERT, UPDATE, DELETE   */
     @Modifying
     @Query("UPDATE account SET amount = :amount WHERE id = :id")
     void changeAmount(long id, BigDecimal amount);
