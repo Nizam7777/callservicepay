@@ -57,8 +57,6 @@ public class TransferCRUDService {
     public List<AccountCRUD> mmfindAccountsByName(String name222){
         logging.getInfo("mmfindAccountsByName_22222 = " + name222);
 
-        /*
-        * супер коммент*/
         return accountCRUDRepository.myFindAccountCRUDByName(name222);
     }
 }
