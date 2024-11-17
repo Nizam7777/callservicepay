@@ -12,6 +12,7 @@ public class AccountWrapper implements RowMapper<Account> {
         Account acc = new Account();
         
         acc.setAmount(rslt.getBigDecimal("amount"));
+//        acc.setAmount(rslt.getBigDecimal(i));
         acc.setName(rslt.getString("name"));
         acc.setId(rslt.getInt("id"));
 
